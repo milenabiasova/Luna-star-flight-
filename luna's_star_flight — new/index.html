@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Luna's Star Flight</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="buttonLayout">
+    <div id="storyText">
+        <p> Luna, a young adventurous owl, has always been fascinated by the night sky and the mysteries it holds.<br>
+            One night, while gazing at the stars, she notices that some stars are fading away, threatening the balance of the night.
+            Luna decides to embark on an epic journey to restore the stars and save the night.<br></p>
+        <p> To control Luna please press 'space'</p>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <button class="myButton" id="myButton">START GAME</button>
+    <button class="myButton" id="restartButton" style="display: none; margin-top: 65px">Restart Game</button>
+</div>
+<div id="progressContainer" style="display: none; width: 300px; height: 15px; position: absolute; top: 50px; left: 20px;">
+    <div id="starIndicator" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%);"></div>
+    <div id="progressBar" style="width: 0; height: 100%; background-color: gold; border-radius: 8px;"></div>
+</div>
+<audio id="starSound" src="./sounds/star.mp3"></audio>
+<audio id="backgroundMusic" loop>
+    <source src="./sounds/forest.mp3" type="audio/mpeg"></audio>
+<button id="toggleMusicBtn">Music</button>
+<audio id="gameOverSound">
+    <source src="./sounds/lost.wav" type="audio/mpeg">
+</audio>
+<audio id="winningSound">
+    <source src="./sounds/win.mp3" type="audio/mpeg">
+</audio>
+<script type="module" src="script.js">
+</script>
+</body>
+</html>
